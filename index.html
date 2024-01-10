@@ -207,7 +207,7 @@
       <!-- Main Hero Content -->
       <div
         class="wrapper-container flex max-md:flex-col md:px-12 px-4 md:items-center justify-between w-full max-md:gap-16">
-        <div class="space-y-3 max-md:order-last max-md:pb-10">
+        <div class="space-y-6 max-md:order-last max-md:pb-10">
           <div class="h-[40px] md:w-[147px] w-24">
             <img src="/img/ship-logo.13a827b.png" alt="">
           </div>
@@ -232,7 +232,44 @@
 
     </div>
   </section>
-  <div class="bg-primary h-10"></div>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget text-white"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+          "symbols": [
+            {
+              "description": "BTC/USDT",
+              "proName": "BINANCE:BTCUSDT"
+            },
+            {
+              "description": "ETH/USDT",
+              "proName": "BINANCE:ETHUSDT"
+            },
+            {
+              "description": "TRX/USDT",
+              "proName": "BINANCE:TRXUSDT"
+            },
+            {
+              "description": "DOGE/USDT",
+              "proName": "BINANCE:DOGEUSDT"
+            },
+            {
+              "description": "MATIC/USDT",
+              "proName": "BINANCE:MATICUSDT"
+            },
+            {
+              "description": "BIGTIME/USDT",
+              "proName": "BITGET:BIGTIMEUSDT"
+            }
+          ],
+            "showSymbolLogo": false,
+              "isTransparent": true,
+              "displayMode": "regular",
+              "colorTheme": "light",
+              "locale": "en",
+        }
+      </script>
+    </div>
 
   <section>
     <div class="wrapper-container md:px-10 py-16 space-y-4">
@@ -279,7 +316,7 @@
           Opportunity<span class="text-primary">.</span></h1>
         <div class="max-md:px-5 flex justify-between items-center">
           <div
-            class="gap-6 flex overflow-x-auto max-w-4xl w-full *:md:py-3 *:px-1 *:min-w-32 *:flex *:items-center *:justify-center">
+            class="gap-6 flex overflow-x-auto max-md:max-w-4xl w-full *:md:py-3 *:px-3 max-md:*:min-w-32 *:flex *:items-center *:justify-center">
             <a href="#" class="bg-gray-200  rounded-full">Popular Spot</a>
             <a href="#" class=" py-3 rounded-full">Popular Futures</a>
             <a href="#" class="px-4 py-3 rounded-full">Top Gainers</a>
